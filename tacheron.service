@@ -1,0 +1,11 @@
+[Unit]
+Description=Run Tasks Regularly
+
+[Service]
+ExecStart=
+IgnoreSIGPIPE=false
+KillMode=process
+StandardOutput=/var/log/spot
+Restart=on-failure
+
+[Install]
